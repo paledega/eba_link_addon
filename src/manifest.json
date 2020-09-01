@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Eba_Link",
+  "version": "1.1",
+  "applications": {
+    "gecko": {
+      "id": "ebalink@ebalink.io"
+    }
+  },
+
+  "description": "EBA canlı derslerine Zoom uygulaması üzerinden ulaşın!",
+
+  "icons": {
+    "256": "eba.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.eba.gov.tr/*"],
+      "js": ["eba.js"]
+    }
+  ]
+}
+
